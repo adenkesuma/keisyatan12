@@ -9,25 +9,151 @@
 </head>
 
 <body>
-	<!-- First Section -->
-	<section id="home" class="pt-36">
-		<div class="container relative">
-			<div class="w-full lg:w-screen">
-				<img src="../../keisyatan12/image/headline.webp" alt="headline">
-				<div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-left text-white w-full px-6 ml-36">
-					<h1 class="text-base font-bold text-primary text-7xl font-sans mb-3">Ambil Kendali <br/>Masa Depanmu</h1>
-					<h2 class="font-normal text-primary text-lg mb-5">Kampus Merdeka adalah cara terbaik berkuliah.<br/> 
-						Dapatkan kemerdekaan untuk membentuk masa depan yang<br/>
-						sesuai dengan aspirasi kariermu.</h2>
-					<a href="#" class="text-base font-semibold text-white bg-button py-3 px-8 rounded-lg mr-3 hover:shadow-lg hover:bg-blue-800 transition duration-300 ease-in-out">Telusuri Program</a>
-					<a href="#" class="text-base font-semibold text-black bg-button2 py-3 px-8 rounded-lg hover:shadow-lg transition duration-300 ease-in-out">Cek Persyaratan Umum</a>
+	<!-- Navbar -->
+	<nav class="py-4 bg-[#000000]">
+		<div class="max-w-6xl mx-auto flex items-center justify-between">
+			<div class="flex gap-3 items-center">
+				<img 
+					src="/image/logokemdikbud.webp"
+					alt="logo kampus merdeka"
+					class="w-10"
+				/>
+				<img 
+					src="/image/logokampusmerdeka.webp"
+					alt="logo kampus merdeka"
+					class="w-20"
+				/>
+			</div>
+
+			<ul class="flex items-center gap-12">
+				<li>
+					<a href="#" class="text-white font-semibold">Beranda</a>
+				</li>
+				<li>
+					<a href="#" class="text-white font-semibold">Program</a>
+				</li>
+				<li>
+					<a href="#" class="text-white font-semibold">Butuh Bantuan?</a>
+				</li>	
+				<button class="flex items-center gap-4 bg-white rounded-full p-4">
+					<img 
+						src="/image/user.svg"
+						alt="user"
+						class="w-[14px]"
+					/>
+					<span class="text-black text-sm font-semibold">Masuk ke Akun</span>
+				</button>
+			</ul>
+		</div>
+	</nav>
+
+	<!-- sub navbar -->
+	<div>
+		<ul class="max-w-6xl mx-auto flex items-center gap-8">
+			<li class="py-3 hover:bg-gray-100 block hover:text-blue-600">
+                <button id="mega-menu-full-dropdown-button" data-collapse-toggle="mega-menu-full-dropdown" class="flex items-center justify-between w-full py-2 px-3 rounded text-base font-semibold md:w-auto md:hover:bg-transparent md:border-0 ">
+					<p class="text-left">Kampus Mengajar</p> <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+    				<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+  					</svg>
+				</button>
+            </li>
+			<li class="py-3 hover:bg-gray-100 block hover:text-blue-600">
+                <button id="mega-menu-full-dropdown-button" data-collapse-toggle="mega-menu-full-dropdown" class="flex items-center justify-between w-full py-2 px-3 rounded text-base font-semibold md:w-auto md:hover:bg-transparent md:border-0 ">
+					<p class="text-left">Magang MSIB</p> <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+    				<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+  					</svg>
+				</button>
+            </li>
+			<li class="py-3 hover:bg-gray-100 block hover:text-blue-600">
+                <button id="mega-menu-full-dropdown-button" data-collapse-toggle="mega-menu-full-dropdown" class="flex items-center justify-between w-full py-2 px-3 rounded text-base font-semibold md:w-auto md:hover:bg-transparent md:border-0 ">
+					<p class="text-left">Studi Independen Bersertifikat</p> <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+    				<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+  					</svg>
+				</button>
+            </li>
+			<li class="py-3 hover:bg-gray-100 block hover:text-blue-600">
+                <button id="mega-menu-full-dropdown-button" data-collapse-toggle="mega-menu-full-dropdown" class="flex items-center justify-between w-full py-2 px-3 rounded text-base font-semibold md:w-auto md:hover:bg-transparent md:border-0 ">
+					<p class="text-left">Pertukaran Mahasiswa Merdeka</p> <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+    				<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+  					</svg>
+				</button>
+            </li>
+			<li class="py-3 hover:bg-gray-100 block hover:text-blue-600">
+                <button id="mega-menu-full-dropdown-button" data-collapse-toggle="mega-menu-full-dropdown" class="flex items-center justify-between w-full py-2 px-3 rounded text-base font-semibold md:w-auto md:hover:bg-transparent md:border-0 ">
+					<p class="text-left">Program dan Kegiatan Lainnya</p> <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+    				<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+  					</svg>
+				</button>
+            </li>
+		</ul>
+		
+		<div id="mega-menu-full-dropdown" class="mt-1 border-gray-200 shadow-sm bg-gray-50 md:bg-white border-y dark:bg-gray-800 dark:border-gray-600">
+        	<div class="grid max-w-screen-xl px-4 py-5 mx-auto text-gray-900 dark:text-white sm:grid-cols-2 md:px-6">
+        	    <ul>
+        	        <li>
+        	            <a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
+        	                <div class="font-semibold">Online Stores</div>
+        	                <span class="text-sm text-gray-500 dark:text-gray-400">Connect with third-party tools that you're already using.</span>
+        	            </a>
+        	        </li>
+        	        <li>
+        	            <a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
+        	                <div class="font-semibold">Segmentation</div>
+        	                <span class="text-sm text-gray-500 dark:text-gray-400">Connect with third-party tools that you're already using.</span>
+        	            </a>
+        	        </li>
+        	        <li>
+        	            <a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
+        	                <div class="font-semibold">Marketing CRM</div>
+        	                <span class="text-sm text-gray-500 dark:text-gray-400">Connect with third-party tools that you're already using.</span>
+        	            </a>
+        	        </li>
+        	    </ul>
+        	    <ul>
+        	        <li>
+        	            <a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
+        	                <div class="font-semibold">Online Stores</div>
+        	                <span class="text-sm text-gray-500 dark:text-gray-400">Connect with third-party tools that you're already using.</span>
+        	            </a>
+        	        </li>
+        	        <li>
+        	            <a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
+        	                <div class="font-semibold">Segmentation</div>
+        	                <span class="text-sm text-gray-500 dark:text-gray-400">Connect with third-party tools that you're already using.</span>
+        	            </a>
+        	        </li>
+        	        <li>
+        	            <a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
+        	                <div class="font-semibold">Marketing CRM</div>
+        	                <span class="text-sm text-gray-500 dark:text-gray-400">Connect with third-party tools that you're already using.</span>
+        	            </a>
+        	        </li>
+        	    </ul>
+        	</div>
+    	</div>
+	</div>
+
+	<!-- banner -->
+	<header class="banner-background">
+		<div class="max-w-6xl mx-auto h-full flex items-center">
+			<div class="w-[60%]">
+				<h1 class="text-white font-bold text-7xl">Ambil Kendali <br> Masa Depanmu</h1>
+				<p class="text-white pt-2 pb-4">
+					Kampus Merdeka adalah cara terbaik berkuliah. 
+					Dapatkan kemerdekaan untuk membentuk masa depan yang 
+					sesuai dengan aspirasi kariermu.
+				</p>
+				<div class="flex items-center gap-4">
+					<button class="bg-blue-600 py-3 px-8 text-white font-semibold rounded-xl">
+						Telusuri Program
+					</button>
+					<button class="bg-white py-3 px-8 text-black font-semibold rounded-xl">
+						Cek Persyaratan Umum
+					</button>
 				</div>
 			</div>
 		</div>
-	
-
-	</section>
-	<!-- End of First Section -->
+	</header>
 
     <!-- About Kampus Merdeka -->
     <section id="about" class="pt-36 pb-32">
@@ -65,6 +191,21 @@
 	</section>
 	<!-- End of About Kampus Merdeka -->
 
-</body>
+	<script>
+    	document.addEventListener("DOMContentLoaded", function() {
+    	    const buttons = document.querySelectorAll("[data-collapse-toggle]");
 
+    	    buttons.forEach(button => {
+    	        button.addEventListener("click", function() {
+    	            const targetId = this.getAttribute("data-collapse-toggle");
+    	            const target = document.getElementById(targetId);
+
+    	            // Toggle the visibility of the target element
+    	            target.classList.toggle("hidden");
+    	        });
+    	    });
+    	});
+	</script>
+
+</body>
 </html>
